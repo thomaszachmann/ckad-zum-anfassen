@@ -1,30 +1,30 @@
-# CKAD zum Anfassen – Begleitcode
+# CKAD hands-on – Companion Code
 
-Begleitcode zum Buch **CKAD zum Anfassen** – Certified Kubernetes Application Developer,
-praxisnahe Prüfungsvorbereitung. Teil der Reihe IT-Trainingslager von Thomas Zachmann.
+Companion code for the book **CKAD hands-on** (German edition: *CKAD zum Anfassen*) – Certified
+Kubernetes Application Developer, practical exam preparation. Part of Thomas Zachmann's IT Drills series.
 
-Buchseite: https://it-trainingslager.de/buecher/ckad
+Book page: https://itdrills.com/books/ckad · German edition: https://it-trainingslager.de/buecher/ckad
 
-## Inhalt
+## Contents
 
-- `notes-api/` – kleine Go-API (Go 1.27), die du im Buch selbst als Image baust
-  (Dockerfile schreibst du an Tag 2), in die lokale Registry schiebst und durch alle
-  Trainingstage begleitest.
+- `notes-api/` – a small Go API (Go 1.27) that you build into an image yourself in the book
+  (you write the Dockerfile on Day 2), push to the local registry and carry through all
+  training days.
 
-Alle Schlüssel und Passwörter im Buch (z. B. `lab-key-123`) sind Laborwerte – nie in
-Produktion verwenden.
+All keys and passwords in the book (e.g. `lab-key-123`) are lab values – never use them in
+production.
 
-Getestet mit kubeadm v1.37.2, containerd v2.4.2, Calico v3.33.1, Traefik v3.7.19 und
-podman 4.9.3 auf Ubuntu 24.04.
+Tested with kubeadm v1.37.2, containerd v2.4.2, Calico v3.33.1, Traefik v3.7.19 and
+podman 4.9.3 on Ubuntu 24.04.
 
-## Schnellstart
+## Quick start
 
 ```bash
 git clone https://github.com/thomaszachmann/ckad-zum-anfassen
 cp -r ckad-zum-anfassen/notes-api ~/ckad/notes-api
 ```
 
-## Hinweis
+## Disclaimer
 
-Dieses Projekt steht in keiner Verbindung zur Linux Foundation oder zur CNCF. CKAD ist
-eine Marke der Linux Foundation.
+This project is not affiliated with the Linux Foundation or the CNCF. CKAD is a trademark
+of the Linux Foundation.
